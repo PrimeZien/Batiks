@@ -2,9 +2,325 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>batiks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Overpass:wght@300&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17fe172292.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<div id="nav-bar">
+    <div id="nav-bar-name">
+        batiks
+    </div>
+    <div id="nav-bar-items" class="nav-bar-items">
+        <div class="nav-bar-item-section">
+            <div class="nav-bar-item"><a href="index.html">Home</a></div>
+            <div class="nav-bar-item"><a href="new-arrivals.html">New Arrivals</a></div>
+            <div class="nav-bar-item"><span>Cloths</span>
+                <div class="nav-bar-sub-item" id="cloths">
+                    <ul>
+                        <li><a href="saree.html"> Saree</a></li>
+                        <li><a href="shirt.html"> Shirt</a></li>
+                        <li><a href="office-wear.html"> Office Wear</a></li>
+                        <li><a href="casual-wear.html"> Casual Wear</a></li>
+                        <li><a href="maternity-wear.html"> Maternity Wear</a></li>
+                        <li><a href="family-dress.html"> Family Dress</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><span>Accessories</span>
+                <div class="nav-bar-sub-item" id="accessories">
+                    <ul>
+                        <li><a href="bag.html"> Bags</a></li>
+                        <li><a href="jewellery.html"> Jewelery</a></li>
+                        <li><a href="slipper.html"> Slippers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><a href="contact-us.html">Contact Us</a></div>
+        </div>
+    </div>
+    <a id="menu" onclick="menu()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/slide-show-one.jpg" class="d-block w-100 h-25" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Unique and brand-new</h5>
+                <p>We're here with a brand-new collection just as you anticipated! </p>
+                <p>Rush and hurry to order your favourites soon!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slide-show-two.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Unmatchable designs</h5>
+                <p>Live your fashion dreams.This Batiks is a dream!</p>
+                <p>Zoom in to spot the beauty. Nowhere to match the quality!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slide-show-three.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Excellent and elegant</h5>
+                <p>Do you love batik?</p>
+                <p>Choose from a wide range of styles to find the prints that'll fit you best.</p>
+                <p>Admire the beauty of our culture</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slide-show-four.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Mesmerizing beauty</h5>
+                <p>Emphasizing strong and confident looks by improving visual aesthetics with BATIK's stunning
+                    details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="description">
+    <div id="description-text">
+        <h5>Our Story</h5>
+        <p>Founded by Diluni Malsha in the year of 2020, Batiks is an online led fashion and life style retail store
+            which brings you unique and elegant designs to add a touch of glamour to your everyday life style.
+            We are working with local designers and experts in fashion industry focusing on latest and uncommon natural
+            fashion trends for everyone. And also empowers our culture and tradition too.
+            Our aim is to provide hassle free shopping experience with wide range of products as well as personalized
+            batiks as you desire.Purchasing can be made via credit cards,Cash on delivery (COD),bank transfers and
+            mobile cash(ez cash) methods.
+            Looking forward to spoil you with our trendy,Fashionable,quality products at affordable price.</p>
+    </div>
+    <div id="description-img">
+        <div id="y-image"></div>
+        <div id="s-image"></div>
+        <div id="x-image"></div>
+    </div>
+</div>
+
+<div id="products">
+    <h1>Our Products</h1>
+    <div id="product-types" class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/saree.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="saree.html">Saree</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/shirt.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="shirt.html">Shirt</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/slippers.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="slipper.html">Slippers</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/maternity-wear.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="maternity-wear.html">Maternity Wear</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/jewellery.JPG" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="jewellery.html">Jewellery</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/casual-wear.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="casual-wear.html">Casual Wear</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/family-dress.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="family-dress.html">Family Dress</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/office-wear.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="office-wear.html">Office Wear</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 product-type"><img src="images/products/types/handbag.jpg" alt="">
+            <div class="type-background">
+                <div class="type-text">
+                    <a href="bag.html">Bags</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="new-arrivals">
+    <div id="new-arrivals-topic">New Arrivals</div>
+    <div id="controller-previous">
+        <img src="images/left-arrow.png" alt="previous" onclick="previousSlide()">
+    </div>
+    <div class="new-item ni-1">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/saree/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Sri Lankan Batik 9028</p>
+            <p class="new-item-text-price">Rs.3550.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-2">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/jewellery/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">BJW09182</p>
+            <p class="new-item-text-price">Rs.1099.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-3">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/casual-wear/11.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Cotton Batik 65641</p>
+            <p class="new-item-text-price">Rs.3200.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-4">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/slippers/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Batik Slippers 9526</p>
+            <p class="new-item-text-price">Rs.1200.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-5">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/family-dress/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Cotton Batik Family Set 9127</p>
+            <p class="new-item-text-price">Rs.8099.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-6">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/bags/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">BBG8728</p>
+            <p class="new-item-text-price">Rs.1559.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-7">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/maternity-wear/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Silk Batik 02838</p>
+            <p class="new-item-text-price">Rs.2900.00</p>
+        </div>
+    </div>
+    <div class="new-item ni-8">
+        <img src="images/new.png" alt="new" class="new-logo">
+        <div class="new-item-img">
+            <img src="images/products/shirt/1.jpg" alt="product">
+        </div>
+        <div class="new-item-text">
+            <p class="new-item-text-name">Cotton Batik 1235</p>
+            <p class="new-item-text-price">Rs.2900.00</p>
+        </div>
+    </div>
+    <div id="controller-next">
+        <img src="images/right-arrow.png" alt="next" onclick="nextSlide()">
+    </div>
+    <div id="new-arrivals-view-more"><a href="new-arrivals.html">View More</a></div>
+</div>
+
+<div id="footer">
+    <div id="footer-items" class="row">
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Help</h6>
+            <ul>
+                <li>Customer Support</li>
+                <li>How to Order</li>
+                <li>Send Feedback</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer-item">
+            <h6>Legal</h6>
+            <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Delivery Policy</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Categories</h6>
+            <ul>
+                <li><a href="saree.html">Saree</a></li>
+                <li><a href="shirt.html">Shirts</a></li>
+                <li><a href="office-wear.html">Office Wears</a></li>
+                <li><a href="casual-wear.html">Casual Wears</a></li>
+                <li><a href="maternity-wear.html">Maternity Wears</a></li>
+                <li><a href="family-dress.html">Family Dress</a></li>
+                <li><a href="bag.html">Bags</a></li>
+                <li><a href="jewellery.html">Jewelery</a></li>
+                <li><a href="slipper.html">Slippers</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Follow Us</h6>
+            <ul>
+                <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li><i class="fab fa-twitter"></i><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="cart-background">
+    <div id="cart">
+        <div id="cart-label">Shopping Cart</div>
+        <div id="cart-close" onclick="closeCart()"><i class="fas fa-times"></i></div>
+        <div id="cart-items">
+        </div>
+        <div id="cart-total">
+            <p>Sub Total</p>
+            <p id="subTotal">Rs. <span id="totalAmount">0</span>.00</p>
+        </div>
+        <div id="cart-checkout">Checkout</div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>
