@@ -1,0 +1,618 @@
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    margin-top: -100px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20%;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-caption h5 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#description {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 80%;
+    height: 550px;
+}
+
+#description-img {
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+}
+
+#y-image {
+    position: absolute;
+    width: 360px;
+    height: 550px;
+    background: url("../images/y-image.jpg") no-repeat;
+    background-size: contain;
+}
+
+#s-image {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    width: 360px;
+    height: 300px;
+    background: url("../images/s-image.jpg") no-repeat;
+    background-size: contain;
+
+}
+
+#x-image {
+    position: absolute;
+    top: 80%;
+    left: -10%;
+    width: 520px;
+    height: 250px;
+    background: url("../images/v-image.jpg") no-repeat;
+    background-size: cover;
+}
+
+#description-text {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 10%;
+    bottom: 0;
+    margin: auto;
+    padding-right: 10%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#description-text p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+}
+
+#description-text h5 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+
+#products {
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+#products h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+#product-types {
+    width: 63%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.product-type {
+    position: relative;
+    height: 200px;
+    border: 1px silver solid;
+}
+
+.product-type img, .type-background {
+    position: absolute;
+    width: 93%;
+    height: 93%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: width 1.5s, height 1.5s, background-color 1.5s;
+}
+
+.product-type:hover img, .product-type:hover .type-background {
+    width: 99%;
+    height: 99%;
+    background-color: rgb(0, 15, 44);
+}
+
+.product-type:hover .type-text a {
+    font-size: 45px;
+    color: white;
+}
+
+.type-background {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.type-text {
+    position: absolute;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'Overpass', sans-serif;
+}
+
+.type-text a {
+    text-decoration: none;
+    color: transparent;
+    transition: font-size 1.5s, color 1.5s;
+}
+
+#new-arrivals {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    right: 0;
+    left: 0;
+    background-color: rgba(192, 192, 192, 0.24);
+    margin: auto auto 100px;
+    padding-bottom: 100px;
+}
+
+#new-arrivals-topic {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.new-item {
+    position: absolute;
+    width: 22%;
+    height: 50vh;
+    background-color: white;
+    margin: 1%;
+    box-shadow: silver 0 0 20px;
+}
+
+.ni-1 {
+    display: inline-grid;
+    left: 1%;
+}
+
+.ni-2 {
+    display: inline-grid;
+    left: 24%;
+}
+
+.ni-3 {
+    display: inline-grid;
+    left: 48%;
+}
+
+.ni-4 {
+    display: inline-grid;
+    left: 72%;
+}
+
+.ni-5 {
+    display: none;
+}
+
+.ni-6 {
+    display: none;
+}
+
+.ni-7 {
+    display: none;
+}
+
+.ni-8 {
+    display: none;
+}
+
+.new-item-img {
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    left: 10%;
+    height: 75%;
+}
+
+.new-item-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.new-item-text {
+    position: absolute;
+    top: 81%;
+    width: 90%;
+    left: 5%;
+    height: 16%;
+}
+
+.new-item-text p {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.new-item-text-price {
+    font-size: 20px;
+    color: #852a74;
+}
+
+#controller-previous img, #controller-next img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+#controller-previous {
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    left: -5%;
+}
+
+#controller-next {
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    top: 0;
+    left: 102%;
+}
+
+#new-arrivals-view-more {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+#new-arrivals-view-more a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #852a74;
+    transition: font-size 1s, color 1s;
+}
+
+#new-arrivals-view-more a:hover {
+    font-size: 35px;
+    color: #381232;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1100px) and (min-width: 768px) {
+
+    .carousel-caption h5 {
+        font-size: 55px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+
+    #y-image {
+        width: 230px;
+        height: 540px;
+    }
+
+    #s-image {
+        top: 25%;
+        left: 45%;
+        width: 250px;
+        height: 230px;
+    }
+
+    #x-image {
+        top: 60%;
+        left: -10%;
+        width: 390px;
+        height: 240px;
+    }
+
+    #description {
+        width: 90%;
+    }
+
+    #description-text {
+        position: absolute;
+        width: 40%;
+        height: 80%;
+        top: 0;
+        margin-top: 0;
+    }
+
+    #description-text p {
+        font-size: 0.9rem;
+    }
+
+    #description-text h5 {
+        font-size: 40px;
+    }
+
+    #products {
+        margin-top: 150px;
+    }
+
+    #new-arrivals {
+        height: 80vh;
+    }
+
+    .new-item {
+        width: 47%;
+    }
+
+    .ni-1 {
+        display: inline-grid;
+        left: 1%;
+    }
+
+    .ni-2 {
+        display: inline-grid;
+        left: 50%;
+    }
+
+    .ni-3 {
+        display: none;
+    }
+
+    .ni-4 {
+        display: none;
+    }
+
+    .ni-5 {
+        display: none;
+    }
+
+    .ni-6 {
+        display: none;
+    }
+
+    .ni-7 {
+        display: none;
+    }
+
+    .ni-8 {
+        display: none;
+    }
+
+    #new-arrivals-topic {
+        font-size: 70px;
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 500px) {
+
+    #carousel {
+        top: 100px;
+    }
+
+    #description-img {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #description-text {
+        width: 100%;
+        height: 50%;
+        top: 175%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #y-image {
+        left: 10%;
+        width: 230px;
+        height: 540px;
+    }
+
+    #s-image {
+        top: 210px;
+        left: 45%;
+        width: 200px;
+        height: 230px;
+        z-index: 99;
+    }
+
+    #x-image {
+        top: 60%;
+        left: 0;
+        width: 100%;
+        height: 280px;
+    }
+
+    #description-text p {
+        font-size: 0.9rem;
+    }
+
+    #description-text h5 {
+        font-size: 40px;
+    }
+
+    #products {
+        margin-top: 420px;
+    }
+
+    #new-arrivals {
+        height: 80vh;
+    }
+
+    .new-item {
+        width: 47%;
+    }
+
+    .ni-1 {
+        display: inline-grid;
+        left: 1%;
+    }
+
+    .ni-2 {
+        display: inline-grid;
+        left: 50%;
+    }
+
+    .ni-3 {
+        display: none;
+    }
+
+    .ni-4 {
+        display: none;
+    }
+
+    .ni-5 {
+        display: none;
+    }
+
+    .ni-6 {
+        display: none;
+    }
+
+    .ni-7 {
+        display: none;
+    }
+
+    .ni-8 {
+        display: none;
+    }
+
+    #new-arrivals-topic {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 500px) and (min-width: 0) {
+
+    #carousel {
+        top: 100px;
+    }
+
+    #y-image {
+        display: none;
+    }
+
+    #s-image {
+        display: none;
+    }
+
+    #x-image {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 230px;
+    }
+
+    #description-img {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #description-text {
+        width: 100%;
+        height: 50%;
+        top: 235px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #description-text p {
+        font-size: 0.9rem;
+    }
+
+    #description-text h5 {
+        font-size: 37px;
+    }
+
+    #description {
+        margin-top: 150px;
+    }
+
+    #products {
+        margin-top: 100px;
+    }
+
+    #new-arrivals {
+        height: 70vh;
+    }
+
+    .new-item {
+        width: 96%;
+    }
+
+    .ni-1 {
+        display: inline-grid;
+        left: 1%;
+    }
+
+    .ni-2 {
+        display: none;
+    }
+
+    .ni-3 {
+        display: none;
+    }
+
+    .ni-4 {
+        display: none;
+    }
+
+    .ni-5 {
+        display: none;
+    }
+
+    .ni-6 {
+        display: none;
+    }
+
+    .ni-7 {
+        display: none;
+    }
+
+    .ni-8 {
+        display: none;
+    }
+
+    #new-arrivals-topic {
+        font-size: 50px;
+    }
+}
