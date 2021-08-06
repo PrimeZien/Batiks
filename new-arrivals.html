@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>batiks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/new-arrivals.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Overpass:wght@300&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17fe172292.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadNewArrivals()">
+
+<div id="nav-bar">
+    <div id="nav-bar-name">
+        batiks
+    </div>
+    <div id="nav-bar-items" class="nav-bar-items">
+        <div class="nav-bar-item-section">
+            <div class="nav-bar-item"><a href="index.html">Home</a></div>
+            <div class="nav-bar-item"><a href="new-arrivals.html">New Arrivals</a></div>
+            <div class="nav-bar-item"><span>Cloths</span>
+                <div class="nav-bar-sub-item">
+                    <ul>
+                        <li><a href="saree.html"> Saree</a></li>
+                        <li><a href="shirt.html"> Shirt</a></li>
+                        <li><a href="office-wear.html"> Office Wear</a></li>
+                        <li><a href="casual-wear.html"> Casual Wear</a></li>
+                        <li><a href="maternity-wear.html"> Maternity Wear</a></li>
+                        <li><a href="family-dress.html"> Family Dress</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><span>Accessories</span>
+                <div class="nav-bar-sub-item">
+                    <ul>
+                        <li><a href="bag.html"> Bags</a></li>
+                        <li><a href="jewellery.html"> Jewelery</a></li>
+                        <li><a href="slipper.html"> Slippers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><a href="contact-us.html">Contact Us</a></div>
+        </div>
+    </div>
+    <a id="menu" onclick="menu()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div id="cover">
+    <img src="images/cover/new-arrival-cover.jpg" alt="about" width="100%" height="300px">
+    <div id="cover-text">
+        <p>New Arrivals</p>
+    </div>
+</div>
+
+<div id="cards-div">
+<div id="saree-cards-div" class="cards-div"><h5>New Sarees</h5></div>
+<div id="shirt-cards-div" class="cards-div"><h5>New Shirts</h5></div>
+<div id="office-wear-cards-div" class="cards-div"><h5>New Office Wears</h5></div>
+<div id="casual-wear-cards-div" class="cards-div"><h5>New Casual Wears</h5></div>
+<div id="maternity-wear-cards-div" class="cards-div"><h5>New Maternity Wears</h5></div>
+<div id="family-dress-cards-div" class="cards-div"><h5>New Family Dress</h5></div>
+<div id="handbag-cards-div" class="cards-div"><h5>New Handbag</h5></div>
+<div id="jewellery-div" class="cards-div"><h5>New Jewellery</h5></div>
+<div id="slippers-cards-div" class="cards-div"><h5>New Slippers</h5></div>
+</div>
+
+<div id="single-product">
+    <div id="product-single-background">
+    </div>
+    <div id="product-single-main">
+        <img id="product-single-cancel" src="images/cancel.png" alt="cancel" onclick="closeSingleProduct()">
+        <div class="product-single-img">
+            <img id="product-image" alt="product">
+        </div>
+        <div class="product-single-text">
+            <div id="detail" class="detail">
+                <p id="name" class="detail-name"></p>
+                <p id="price" class="detail-price"></p>
+                <div id="more-product-details"></div>
+                <div id="size-div">
+                    <label for="size">Available Sizes</label>
+                    <br>
+                    <select name="size" id="size">
+                    </select>
+                    <br><br>
+                </div>
+                <br>
+                <label for="quantity">Quantity</label>
+                <br>
+                <input type="number" id="quantity" name="quantity" value="1" step="1">
+                <div class="add-to-cart" onclick="addToCart()">ADD TO CART</div>
+                <div class="buy-now">BUY NOW</div>
+            </div>
+            <div class="other">
+                <p class="other-header">Delivery Options</p>
+                <div class="other-item">
+                    <div class="other-item-img">
+                        <img src="images/delivery.png" alt="home-delivery">
+                    </div>
+                    <div class="other-item-text">
+                        <p class="other-item-topic">Home Delivery</p>
+                        <p class="other-item-sub-topic">5 - 7 days</p>
+                    </div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img">
+                        <img src="images/cash-on-delivery.png" alt="cash-on-delivery">
+                    </div>
+                    <div class="other-item-text">
+                        <p class="other-item-topic">Cash On Delivery Available</p>
+                    </div>
+                </div>
+                <p class="other-header">Return & Warranty</p>
+                <div class="other-item">
+                    <div class="other-item-img">
+                        <img src="images/seven-day-return.png" alt="seven-day-return">
+                    </div>
+                    <div class="other-item-text">
+                        <p class="other-item-topic">7 Day Return</p>
+                        <p class="other-item-sub-topic">Change of mind available</p>
+                    </div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img">
+                        <img src="images/warranty.png" alt="warranty">
+                    </div>
+                    <div class="other-item-text">
+                        <p class="other-item-topic">Warranty Available</p>
+                        <p class="other-item-sub-topic">Up to six months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="footer-items" class="row">
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Help</h6>
+            <ul>
+                <li>Customer Support</li>
+                <li>How to Order</li>
+                <li>Send Feedback</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer-item">
+            <h6>Legal</h6>
+            <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Delivery Policy</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Categories</h6>
+            <ul>
+                <li><a href="saree.html">Saree</a></li>
+                <li><a href="shirt.html">Shirts</a></li>
+                <li><a href="office-wear.html">Office Wears</a></li>
+                <li><a href="casual-wear.html">Casual Wears</a></li>
+                <li><a href="maternity-wear.html">Maternity Wears</a></li>
+                <li><a href="family-dress.html">Family Dress</a></li>
+                <li><a href="bag.html">Bags</a></li>
+                <li><a href="jewellery.html">Jewelery</a></li>
+                <li><a href="slipper.html">Slippers</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Follow Us</h6>
+            <ul>
+                <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li><i class="fab fa-twitter"></i><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="cart-background">
+    <div id="cart">
+        <div id="cart-label">Shopping Cart</div>
+        <div id="cart-close" onclick="closeCart()"><i class="fas fa-times"></i></div>
+        <div id="cart-items">
+        </div>
+        <div id="cart-total">
+            <p>Sub Total</p>
+            <p id="subTotal">Rs. <span id="totalAmount">0</span>.00</p>
+        </div>
+        <div id="cart-checkout">Checkout</div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/product.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

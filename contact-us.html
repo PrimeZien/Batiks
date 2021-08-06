@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>batiks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Overpass:wght@300&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17fe172292.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="nav-bar">
+    <div id="nav-bar-name">
+        batiks
+    </div>
+    <div id="nav-bar-items" class="nav-bar-items">
+        <div class="nav-bar-item-section">
+            <div class="nav-bar-item"><a href="index.html">Home</a></div>
+            <div class="nav-bar-item"><a href="new-arrivals.html">New Arrivals</a></div>
+            <div class="nav-bar-item"><span>Cloths</span>
+                <div class="nav-bar-sub-item">
+                    <ul>
+                        <li><a href="saree.html"> Saree</a></li>
+                        <li><a href="shirt.html"> Shirt</a></li>
+                        <li><a href="office-wear.html"> Office Wear</a></li>
+                        <li><a href="casual-wear.html"> Casual Wear</a></li>
+                        <li><a href="maternity-wear.html"> Maternity Wear</a></li>
+                        <li><a href="family-dress.html"> Family Dress</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><span>Accessories</span>
+                <div class="nav-bar-sub-item">
+                    <ul>
+                        <li><a href="bag.html"> Bags</a></li>
+                        <li><a href="jewellery.html"> Jewelery</a></li>
+                        <li><a href="slipper.html"> Slippers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-item"><a href="contact-us.html">Contact Us</a></div>
+        </div>
+    </div>
+    <a id="menu" onclick="menu()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div id="cover">
+    <img src="images/cover/contact-us-cover.jpg" alt="about" width="100%" height="300px">
+</div>
+
+<div id="main" class="row">
+    <div class="col-sm-12 col-md-6" id="form">
+        <h4><i class="far fa-smile-beam"></i>Let Us Know How You Feel</h4>
+        <br>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="Name"
+                       onkeydown="resetField(nameText)">
+                <div id="name-text" class="form-text">Please enter your name!</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="Email"
+                       onkeydown="resetField(emailText)">
+                <div id="email-text" class="form-text">Please enter your email!</div>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" aria-describedby="Subject" autocomplete="off"
+                       onkeydown="resetField(subjectText)">
+                <div id="subject-text" class="form-text">Please enter the subject!</div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" aria-describedby="Message"
+                          onkeydown="resetField(messageText)"></textarea>
+                <div id="message-text" class="form-text">Please enter the message!</div>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <div class="col-sm-12 col-md-6" id="details">
+        <div class="row">
+            <div class="col-1">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="col-11">
+                <h4>ADDRESS</h4>
+                <p>260/9, Kuruduwaththa, Meepawala, Galle</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="col-11">
+                <h4>PHONE</h4>
+                <p>+94 917 373 637</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <i class="fas fa-fax"></i>
+            </div>
+            <div class="col-11">
+                <h4>FAX</h4>
+                <p>+94 917 373 637</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+            <div class="col-11">
+                <h4>EMAIL</h4>
+                <p>batiks@gmail.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <i class="fas fa-globe-asia"></i>
+            </div>
+            <div class="col-11">
+                <h4>WEBSITE</h4>
+                <p>www.batiks,lk</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="footer-items" class="row">
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Help</h6>
+            <ul>
+                <li>Customer Support</li>
+                <li>How to Order</li>
+                <li>Send Feedback</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 footer-item">
+            <h6>Legal</h6>
+            <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Delivery Policy</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Categories</h6>
+            <ul>
+                <li><a href="saree.html">Saree</a></li>
+                <li><a href="shirt.html">Shirts</a></li>
+                <li><a href="office-wear.html">Office Wears</a></li>
+                <li><a href="casual-wear.html">Casual Wears</a></li>
+                <li><a href="maternity-wear.html">Maternity Wears</a></li>
+                <li><a href="family-dress.html">Family Dress</a></li>
+                <li><a href="bag.html">Bags</a></li>
+                <li><a href="jewellery.html">Jewelery</a></li>
+                <li><a href="slipper.html">Slippers</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 footer-item">
+            <h6>Follow Us</h6>
+            <ul>
+                <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li><i class="fab fa-twitter"></i><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/contact-us.js"></script>
+</body>
+</html>
