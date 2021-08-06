@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(192, 192, 192, 0.24);
+}
+
+#nav-bar {
+    background-color: black;
+}
+
+.nav-bar-sub-item {
+    background-color: black;
+}
+
+#main {
+    width: 96%;
+    margin: 2%;
+    box-shadow: silver 0 0 10px;
+    background-color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+#form {
+    padding: 5%;
+}
+
+#details {
+    padding: 5%;
+    font-size: 30px;
+}
+
+#details h4 {
+    font-size: 20px;
+}
+
+#details p {
+    font-size: 15px;
+}
+
+#details .row {
+    margin-bottom: 10px;
+}
+
+.form-text {
+    color: red;
+    display: none;
+}
